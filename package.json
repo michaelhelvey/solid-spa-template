@@ -1,0 +1,52 @@
+{
+	"name": "vite-template-solid",
+	"version": "0.0.0",
+	"author": "Michael Helvey <michael.helvey@gmail.com>",
+	"private": true,
+	"description": "Personal starter project for SolidJS",
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview",
+		"lint": "eslint --cache .",
+		"prepare": "husky install",
+		"test": "vitest"
+	},
+	"license": "MIT",
+	"lint-staged": {
+		"src/**/*.ts": "prettier --write",
+		"*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+		"*.{ts,js,json}": "prettier --write"
+	},
+	"devDependencies": {
+		"@solidjs/testing-library": "^0.5.1",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@types/testing-library__jest-dom": "^5.14.5",
+		"@typescript-eslint/eslint-plugin": "^5.47.0",
+		"@typescript-eslint/parser": "^5.47.0",
+		"@vitest/coverage-istanbul": "^0.26.0",
+		"autoprefixer": "^10.4.13",
+		"eslint": "^8.30.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-jest": "^27.1.7",
+		"eslint-plugin-jest-dom": "^4.0.3",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-solid": "^0.9.1",
+		"eslint-plugin-testing-library": "^5.9.1",
+		"happy-dom": "^8.1.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
+		"postcss": "^8.4.20",
+		"prettier": "^2.8.1",
+		"tailwindcss": "^3.2.4",
+		"typescript": "^4.8.2",
+		"vite": "^3.0.9",
+		"vite-plugin-solid": "^2.3.0",
+		"vite-tsconfig-paths": "^4.0.3",
+		"vitest": "^0.26.1"
+	},
+	"dependencies": {
+		"solid-js": "^1.5.1"
+	}
+}
